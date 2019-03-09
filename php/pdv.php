@@ -1,4 +1,4 @@
-<?php declare (strict_types=1);
+<?php declare (strict_types = 1);
 
 //PHP7.2
 
@@ -16,13 +16,13 @@ function calculaTroco(float $valorTotal, float $valorPago)
 
     $moedas     = ['1.00' => 0, '0.25' => 0, '0.05' => 0, '0.01' => 0];
     $resultado  = '';
-    foreach ($moedas as $moeda => $qtde) {
+    foreach ($moedas as $moeda => &$qtde) {
         while ($troco >= $moeda) {
-            $moedas[$moeda]++;
+            $qtde++;
             $troco -= $moeda;
         }
-        if ($moedas[$moeda] > 0) {
-            $resultado .= "\n{$moedas[$moeda]} moeda(s) de \${$moeda}";
+        if ($qtde > 0) {
+            $resultado .= "\n{$qtde} moeda(s) de \${$moeda}";
         }
     }
     return $resultado;
