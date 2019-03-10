@@ -27,5 +27,5 @@ function calculaTroco(float $valorTotal, float $valorPago)
     }
     return $resultado;
 }
-fscanf(STDIN, "%f%f", $valorTotal, $valorPago);
-printf("%s\n", calculaTroco($valorTotal, $valorPago));
+//fscanf(STDIN, "%f%f", $valorTotal, $valorPago);
+//printf("%s\n", calculaTroco($valorTotal, $valorPago));
