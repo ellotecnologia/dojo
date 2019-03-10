@@ -36,6 +36,10 @@ Execução dos testes com saída estilo `testdox`:
 # ./phpunit --testdox PdvTests.php
 ```
 
+<p align="center">
+    <img alt="Execução dos testes" src="phptest_run.png" />
+</p>
+
 ## Instalação em ambientes Windows
 
 Para instalar em ambiente Windows, o processo é o mesmo, bastando instalar o Docker.
